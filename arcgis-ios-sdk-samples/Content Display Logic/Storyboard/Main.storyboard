@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -284,57 +283,57 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="580" placeholderIntrinsicHeight="62" translatesAutoresizingMaskIntoConstraints="NO" id="jE0-B2-BRg">
-                                            <rect key="frame" x="18" y="12" width="339" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open an existing map" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-tm-Q24">
-                                                    <rect key="frame" x="8" y="7.9999999999999982" width="293" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" text="AGSMap, AGSMapView" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-gk-Tcu">
-                                                    <rect key="frame" x="8" y="30.333333333333336" width="293" height="19.666666666666664"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKx-5K-ajr">
-                                                    <rect key="frame" x="309" y="17" width="22" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="22" id="YHR-nA-ghu"/>
-                                                        <constraint firstAttribute="height" constant="22" id="d5b-iq-FvC"/>
-                                                    </constraints>
-                                                    <color key="tintColor" red="0.0" green="0.36862745098039218" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </button>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="81z-Dk-f7d">
+                                                    <rect key="frame" x="16" y="7.9999999999999964" width="351" height="63.666666666666657"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-24-skc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="293" height="41.333333333333336"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open an existing map" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-tm-Q24">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="293" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" text="AGSMap, AGSMapView" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-gk-Tcu">
+                                                                    <rect key="frame" x="0.0" y="24.333333333333336" width="293" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKx-5K-ajr">
+                                                            <rect key="frame" x="301" y="0.0" width="50" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="d5b-iq-FvC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                            <color key="tintColor" red="0.0" green="0.36862745098039218" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="More info">
+                                                                <color key="titleColor" red="0.3545549256288234" green="0.56989607300745915" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="WKx-5K-ajr" secondAttribute="trailing" constant="8" id="GR2-WD-fPd"/>
-                                                <constraint firstAttribute="bottom" secondItem="WF4-gk-Tcu" secondAttribute="bottom" constant="6" id="Q8y-HD-I3s"/>
-                                                <constraint firstItem="t7O-tm-Q24" firstAttribute="top" secondItem="jE0-B2-BRg" secondAttribute="top" constant="8" id="SZ1-Zd-1Xr"/>
-                                                <constraint firstAttribute="trailing" secondItem="t7O-tm-Q24" secondAttribute="trailing" constant="8" id="VLe-6X-w7k"/>
-                                                <constraint firstItem="t7O-tm-Q24" firstAttribute="leading" secondItem="jE0-B2-BRg" secondAttribute="leading" constant="8" id="aiM-m0-0CQ"/>
-                                                <constraint firstItem="WF4-gk-Tcu" firstAttribute="top" secondItem="t7O-tm-Q24" secondAttribute="bottom" constant="2" id="f4l-RS-XEf"/>
-                                                <constraint firstItem="WKx-5K-ajr" firstAttribute="leading" secondItem="WF4-gk-Tcu" secondAttribute="trailing" constant="8" id="keM-bz-Mt2"/>
-                                                <constraint firstAttribute="trailing" secondItem="WF4-gk-Tcu" secondAttribute="trailing" constant="8" id="p1r-po-bAs"/>
-                                                <constraint firstItem="WKx-5K-ajr" firstAttribute="leading" secondItem="t7O-tm-Q24" secondAttribute="trailing" constant="8" id="qrF-wJ-SK0"/>
-                                                <constraint firstItem="WKx-5K-ajr" firstAttribute="centerY" secondItem="jE0-B2-BRg" secondAttribute="centerY" id="t2Y-cD-BFI"/>
-                                                <constraint firstItem="WF4-gk-Tcu" firstAttribute="leading" secondItem="jE0-B2-BRg" secondAttribute="leading" constant="8" id="ts8-9N-OMY"/>
+                                                <constraint firstAttribute="bottom" secondItem="81z-Dk-f7d" secondAttribute="bottom" constant="8" id="NTV-X5-mGK"/>
+                                                <constraint firstItem="81z-Dk-f7d" firstAttribute="leading" secondItem="jE0-B2-BRg" secondAttribute="leading" constant="16" id="QnU-kz-cn8"/>
+                                                <constraint firstItem="81z-Dk-f7d" firstAttribute="top" secondItem="jE0-B2-BRg" secondAttribute="top" constant="8" id="Va4-PJ-6hX"/>
+                                                <constraint firstAttribute="trailing" secondItem="81z-Dk-f7d" secondAttribute="trailing" constant="8" id="Wth-o2-9XB"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="VLe-6X-w7k"/>
-                                                    <exclude reference="p1r-po-bAs"/>
-                                                </mask>
-                                            </variation>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="jE0-B2-BRg" secondAttribute="bottom" constant="1" id="BhZ-HA-nh9"/>
-                                        <constraint firstItem="jE0-B2-BRg" firstAttribute="leading" secondItem="hjB-p9-kF0" secondAttribute="leadingMargin" constant="2" id="FPL-wN-Sme"/>
-                                        <constraint firstItem="jE0-B2-BRg" firstAttribute="top" secondItem="hjB-p9-kF0" secondAttribute="topMargin" constant="1" id="S6m-du-wBr"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="jE0-B2-BRg" secondAttribute="trailing" constant="2" id="fmI-f9-P0J"/>
+                                        <constraint firstAttribute="bottom" secondItem="jE0-B2-BRg" secondAttribute="bottom" id="BhZ-HA-nh9"/>
+                                        <constraint firstItem="jE0-B2-BRg" firstAttribute="leading" secondItem="hjB-p9-kF0" secondAttribute="leading" id="FPL-wN-Sme"/>
+                                        <constraint firstItem="jE0-B2-BRg" firstAttribute="top" secondItem="hjB-p9-kF0" secondAttribute="top" id="S6m-du-wBr"/>
+                                        <constraint firstAttribute="trailing" secondItem="jE0-B2-BRg" secondAttribute="trailing" id="fmI-f9-P0J"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

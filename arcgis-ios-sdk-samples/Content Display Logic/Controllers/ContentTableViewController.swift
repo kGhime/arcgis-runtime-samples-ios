@@ -55,7 +55,7 @@ class ContentTableViewController: UITableViewController, CustomSearchHeaderViewD
         super.viewWillAppear(animated)
         
         //animate the table only the first time the view appears
-        _ = self.__once
+        // _ = self.__once
     }
     
     func animateTable() {
@@ -113,13 +113,19 @@ class ContentTableViewController: UITableViewController, CustomSearchHeaderViewD
         let node = self.nodesArray[indexPath.row]
         cell.titleLabel.text = node.displayName
         
+        cell.detailLabel.text = node.descriptionText
+
         if self.expandedRowIndex == indexPath.row {
-            cell.detailLabel.text = node.descriptionText
+            cell.detailLabel.isHidden = false
         }
         else {
-            cell.detailLabel.text = nil
+            cell.detailLabel.isHidden = true
         }
         
+        cell.layer.borderWidth = 0
+        
+        cell.infoButton.isHidden = !cell.detailLabel.isHidden
+
         cell.infoButton.addTarget(self, action: #selector(ContentTableViewController.expandCell(_:)), for: UIControlEvents.touchUpInside)
         cell.infoButton.tag = indexPath.row
 
