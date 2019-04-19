@@ -58,7 +58,7 @@ class ScenePropertiesExpressionsViewController: UIViewController {
         let conePoint = AGSPoint(x: 83.9, y: 28.404, z: 5000, spatialReference: .wgs84())
         let coneAttributes = ["HEADING": 0, "PITCH": 0]
         self.coneGraphic = AGSGraphic(geometry: conePoint, symbol: coneSymbol, attributes: coneAttributes)
-        graphicsOverlay.graphics.add(self.coneGraphic)
+        graphicsOverlay.graphics.add(self.coneGraphic!)
     }
     
     @IBAction func headingSliderValueChanged(_ slider: UISlider) {

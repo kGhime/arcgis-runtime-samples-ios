@@ -39,7 +39,7 @@ class OverrideRendererViewController: UIViewController {
         //initialize feature layer with feature table
         self.featureLayer = AGSFeatureLayer(featureTable: featureTable)
         //add the feature layer to the operational layers on the map view
-        self.map.operationalLayers.add(self.featureLayer)
+        self.map.operationalLayers.add(self.featureLayer!)
     }
     
     @IBAction private func overrideRenderer() {

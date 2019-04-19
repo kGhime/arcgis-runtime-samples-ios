@@ -52,7 +52,7 @@ class ListRelatedFeaturesVC: UIViewController, AGSGeoViewTouchDelegate {
         self.parksFeatureLayer = AGSFeatureLayer(featureTable: self.parksFeatureTable)
         
         //add parks feature layer to the map
-        map.operationalLayers.add(self.parksFeatureLayer)
+        map.operationalLayers.add(self.parksFeatureLayer!)
         
         //Feature table for related Preserves layer
         self.preservesFeatureTable = AGSServiceFeatureTable(url: URL(string: "https://services2.arcgis.com/ZQgQTuoyBrtmoGdP/arcgis/rest/services/AlaskaNationalParksPreservesSpecies_List/FeatureServer/0")!)
@@ -63,7 +63,7 @@ class ListRelatedFeaturesVC: UIViewController, AGSGeoViewTouchDelegate {
         //add these to the tables on the map
         //to query related features in a layer, the layer must either be added as a feature
         //layer in operational layers or as a feature table in tables on map
-        map.tables.addObjects(from: [preservesFeatureTable, speciesFeatureTable])
+        map.tables.addObjects(from: [preservesFeatureTable!, speciesFeatureTable!])
         
         //assign map to the map view
         self.mapView.map = map

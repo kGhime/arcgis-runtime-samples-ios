@@ -36,7 +36,7 @@ class ManageSublayersViewController: UIViewController, MapImageSublayersViewCont
         self.mapImageLayer = AGSArcGISMapImageLayer(url: URL(string: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer")!)
         
         //add layer to map
-        map.operationalLayers.add(self.mapImageLayer)
+        map.operationalLayers.add(self.mapImageLayer!)
         
         //initial viewpoint
         let envelope = AGSEnvelope(xMin: -13834661.666904, yMin: 331181.323482, xMax: -8255704.998713, yMax: 9118038.075882, spatialReference: .webMercator())

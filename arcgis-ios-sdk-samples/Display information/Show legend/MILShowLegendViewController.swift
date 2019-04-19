@@ -38,7 +38,7 @@ class MILShowLegendViewController: UIViewController, UIAdaptivePresentationContr
         //create a map image layer using a url
         self.mapImageLayer = AGSArcGISMapImageLayer(url: URL(string: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer")!)
         //add the image layer to the map
-        self.map.operationalLayers.add(self.mapImageLayer)
+        self.map.operationalLayers.add(self.mapImageLayer!)
         
         //create feature table using a url
         let featureTable = AGSServiceFeatureTable(url: URL(string: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Recreation/FeatureServer/0")!)

@@ -41,6 +41,8 @@ class DisplayLocationSettingsViewController: UITableViewController {
             return "Navigation"
         case .compassNavigation:
             return "Compass Navigation"
+        @unknown default:
+            fatalError("Unknown case")
         }
     }
     
@@ -54,6 +56,8 @@ class DisplayLocationSettingsViewController: UITableViewController {
             return #imageLiteral(resourceName: "LocationDisplayNavigationIcon")
         case .compassNavigation:
             return #imageLiteral(resourceName: "LocationDisplayHeadingIcon")
+        @unknown default:
+            fatalError("Unknown case")
         }
     }
     

@@ -45,7 +45,7 @@ class ExtrudeGraphicsViewController: UIViewController {
         //add graphics overlay
         self.graphicsOverlay = AGSGraphicsOverlay()
         self.graphicsOverlay.sceneProperties?.surfacePlacement = .draped
-        self.sceneView.graphicsOverlays.add(self.graphicsOverlay)
+        self.sceneView.graphicsOverlays.add(self.graphicsOverlay!)
         
         //simple renderer with extrusion property
         let renderer = AGSSimpleRenderer()

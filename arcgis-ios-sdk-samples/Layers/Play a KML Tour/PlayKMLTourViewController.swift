@@ -121,6 +121,8 @@ class PlayKMLTourViewController: UIViewController {
         case .playing:
             rewindButtonItem.isEnabled = true
             playPauseButtonItem = pauseButtonItem
+        @unknown default:
+            fatalError("Unknown case")
         }
         let indexOfPlayPause = toolbar.items!.midIndex
         toolbar.items![indexOfPlayPause] = playPauseButtonItem

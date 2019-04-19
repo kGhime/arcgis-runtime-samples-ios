@@ -51,7 +51,7 @@ class GeocodeOfflineViewController: UIViewController, AGSGeoViewTouchDelegate, U
         //initialize the graphics overlay and add to the map view
         //will add the resulting graphics to this overlay
         self.graphicsOverlay = AGSGraphicsOverlay()
-        self.mapView.graphicsOverlays.add(self.graphicsOverlay)
+        self.mapView.graphicsOverlays.add(self.graphicsOverlay!)
         
         //initialize locator task
         self.locatorTask = AGSLocatorTask(name: "san-diego-locator")

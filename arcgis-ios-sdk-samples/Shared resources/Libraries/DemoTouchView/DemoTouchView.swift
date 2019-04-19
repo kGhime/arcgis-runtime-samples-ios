@@ -394,6 +394,8 @@ private class DemoTouchesView: UIView {
                     // NOTE: I've never actually seen this state.
                     //
                     continue
+                @unknown default:
+                    fatalError("Unknown case")
                 }
             }
         }

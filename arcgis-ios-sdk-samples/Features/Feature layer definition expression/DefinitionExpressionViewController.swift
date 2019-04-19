@@ -41,7 +41,7 @@ class DefinitionExpressionViewController: UIViewController {
         self.featureLayer = AGSFeatureLayer(featureTable: featureTable)
         
         //add the feature layer to the map
-        self.map.operationalLayers.add(self.featureLayer)
+        self.map.operationalLayers.add(self.featureLayer!)
     }
     
     @IBAction func applyDefinitionExpression() {

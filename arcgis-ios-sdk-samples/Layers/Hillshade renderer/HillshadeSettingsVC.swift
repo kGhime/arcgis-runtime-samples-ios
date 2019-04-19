@@ -45,6 +45,8 @@ class HillshadeSettingsVC: UITableViewController {
         case .degree: return "Degree"
         case .percentRise: return "Percent Rise"
         case .scaled: return "Scaled"
+        @unknown default:
+            fatalError("Unknown case")
         }
     }
     

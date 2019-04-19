@@ -42,7 +42,7 @@ class IdentifyLayersViewController: UIViewController, AGSGeoViewTouchDelegate {
                 self?.mapImageLayer.subLayerContents[2].isVisible = false
             }
         }
-        self.map.operationalLayers.add(self.mapImageLayer)
+        self.map.operationalLayers.add(self.mapImageLayer!)
         
         //feature table
         let featureTable = AGSServiceFeatureTable(url: URL(string: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/DamageAssessment/FeatureServer/0")!)
@@ -51,7 +51,7 @@ class IdentifyLayersViewController: UIViewController, AGSGeoViewTouchDelegate {
         self.featureLayer = AGSFeatureLayer(featureTable: featureTable)
         
         //add feature layer add to the operational layers
-        self.map.operationalLayers.add(self.featureLayer)
+        self.map.operationalLayers.add(self.featureLayer!)
         
         //set initial viewpoint to a specific region
         self.map.initialViewpoint = AGSViewpoint(center: AGSPoint(x: -10977012.785807, y: 4514257.550369, spatialReference: .webMercator()), scale: 68015210)

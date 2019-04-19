@@ -35,7 +35,7 @@ class UniqueValueRendererViewController: UIViewController {
         self.featureLayer = AGSFeatureLayer(featureTable: featureTable)
         
         //add the layer to the map as operational layer
-        map.operationalLayers.add(self.featureLayer)
+        map.operationalLayers.add(self.featureLayer!)
         
         //assign map to the map view
         self.mapView.map = map

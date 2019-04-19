@@ -55,7 +55,7 @@ class ViewshedCameraViewController: UIViewController {
         
         // create an analysis overlay for the viewshed and to add it to the scene view
         let analysisOverlay = AGSAnalysisOverlay()
-        analysisOverlay.analyses.add(viewshed)
+        analysisOverlay.analyses.add(viewshed!)
         sceneView.analysisOverlays.add(analysisOverlay)
     }
     

@@ -45,7 +45,7 @@ class DeleteFeaturesViewController: UIViewController, AGSGeoViewTouchDelegate, A
         self.featureLayer = AGSFeatureLayer(featureTable: self.featureTable)
         
         //add the feature layer to the operational layers on map
-        map.operationalLayers.add(featureLayer)
+        map.operationalLayers.add(featureLayer!)
     }
     
     func showCallout(for feature: AGSFeature, at tapLocation: AGSPoint) {

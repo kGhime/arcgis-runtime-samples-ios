@@ -162,6 +162,8 @@ class ListKMLContentsSceneViewController: UIViewController {
         case .unknown:
             print("Unexpected AGSKMLViewpointType \(kmlViewpoint.type)")
             return nil
+        @unknown default:
+            fatalError("Unknown case")
         }
     }
     

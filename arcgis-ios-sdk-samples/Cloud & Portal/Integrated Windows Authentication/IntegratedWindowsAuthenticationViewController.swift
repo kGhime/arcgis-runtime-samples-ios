@@ -79,7 +79,7 @@ class IntegratedWindowsAuthenticationViewController: UITableViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        NotificationCenter.default.removeObserver(textDidChangeObserver)
+        NotificationCenter.default.removeObserver(textDidChangeObserver!)
         textDidChangeObserver = nil
     }
 }

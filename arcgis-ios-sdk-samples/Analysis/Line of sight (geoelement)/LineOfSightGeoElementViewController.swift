@@ -199,6 +199,8 @@ class LineOfSightGeoElementViewController: UIViewController {
         case .unknown:
             targetVisibilityLabel.text = "Unknown"
             taxiGraphic.isSelected = false
+        @unknown default:
+            fatalError("Unknown case")
         }
     }
 

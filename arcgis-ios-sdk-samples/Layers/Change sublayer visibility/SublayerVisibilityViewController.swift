@@ -34,7 +34,7 @@ class SublayerVisibilityViewController: UIViewController {
         self.mapImageLayer = AGSArcGISMapImageLayer(url: URL(string: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer")!)
         
         //add the image layer to the map
-        self.map.operationalLayers.add(self.mapImageLayer)
+        self.map.operationalLayers.add(self.mapImageLayer!)
         
         //assign the map to the map view
         self.mapView.map = self.map

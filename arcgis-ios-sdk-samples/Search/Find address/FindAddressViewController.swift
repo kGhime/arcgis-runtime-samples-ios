@@ -39,7 +39,7 @@ class FindAddressViewController: UIViewController, AGSGeoViewTouchDelegate, UISe
         
         //initialize the graphics overlay and add to the map view
         self.graphicsOverlay = AGSGraphicsOverlay()
-        self.mapView.graphicsOverlays.add(self.graphicsOverlay)
+        self.mapView.graphicsOverlays.add(self.graphicsOverlay!)
         
         //initialize locator task
         self.locatorTask = AGSLocatorTask(url: URL(string: self.locatorURL)!)

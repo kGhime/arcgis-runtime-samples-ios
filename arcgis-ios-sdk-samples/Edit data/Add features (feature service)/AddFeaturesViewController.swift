@@ -44,7 +44,7 @@ class AddFeaturesViewController: UIViewController, AGSGeoViewTouchDelegate {
         self.featureLayer = AGSFeatureLayer(featureTable: self.featureTable)
         
         //add the feature layer to the operational layers on map
-        map.operationalLayers.add(featureLayer)
+        map.operationalLayers.add(featureLayer!)
     }
     
     func addFeature(at mappoint: AGSPoint) {

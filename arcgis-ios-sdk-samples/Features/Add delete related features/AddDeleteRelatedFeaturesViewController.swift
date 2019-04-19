@@ -48,7 +48,7 @@ class AddDeleteRelatedFeaturesViewController: UIViewController, AGSGeoViewTouchD
         self.parksFeatureLayer = AGSFeatureLayer(featureTable: self.parksFeatureTable)
         
         //add feature layer to the map
-        map.operationalLayers.add(self.parksFeatureLayer)
+        map.operationalLayers.add(self.parksFeatureLayer!)
         
         //species feature table (destination feature table)
         //related to the parks feature layer in a 1..M relationship
@@ -56,7 +56,7 @@ class AddDeleteRelatedFeaturesViewController: UIViewController, AGSGeoViewTouchD
         
         //add table to the map
         //for the related query to work, the related table should be present in the map
-        map.tables.addObjects(from: [speciesFeatureTable])
+        map.tables.addObjects(from: [speciesFeatureTable!])
         
         //assign map to map view
         self.mapView.map = map

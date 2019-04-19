@@ -41,7 +41,7 @@ class EditGeometryViewController: UIViewController, AGSGeoViewTouchDelegate, AGS
         self.featureTable = AGSServiceFeatureTable(url: URL(string: featureServiceURL)!)
         self.featureLayer = AGSFeatureLayer(featureTable: self.featureTable)
         
-        self.map.operationalLayers.add(self.featureLayer)
+        self.map.operationalLayers.add(self.featureLayer!)
 
         self.mapView.map = self.map
         self.mapView.touchDelegate = self

@@ -85,6 +85,7 @@ private extension AGSSurfacePlacement {
         case .draped: return "Draped"
         case .relative: return "Relative"
         case .absolute: return "Absolute"
+        @unknown default: fatalError("Unknown case")
         }
     }
 }

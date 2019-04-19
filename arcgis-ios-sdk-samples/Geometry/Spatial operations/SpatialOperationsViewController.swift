@@ -118,7 +118,7 @@ class SpatialOperationsViewController: UIViewController, OperationsListVCDelegat
         //create result graphic if not present
         if self.resultGraphic == nil {
             self.resultGraphic = AGSGraphic(geometry: resultGeometry, symbol: symbol, attributes: nil)
-            self.graphicsOverlay.graphics.add(self.resultGraphic)
+            self.graphicsOverlay.graphics.add(self.resultGraphic!)
         }
             //update the geometry if already present
         else {
@@ -143,7 +143,7 @@ class SpatialOperationsViewController: UIViewController, OperationsListVCDelegat
     func operationsListViewController(_ operationsListViewController: OperationsListViewController, didSelectOperation index: Int) {
         if index == 0 {
             if self.resultGraphic != nil {
-                self.graphicsOverlay.graphics.remove(self.resultGraphic)
+                self.graphicsOverlay.graphics.remove(self.resultGraphic!)
                 self.resultGraphic = nil
             }
         } else {

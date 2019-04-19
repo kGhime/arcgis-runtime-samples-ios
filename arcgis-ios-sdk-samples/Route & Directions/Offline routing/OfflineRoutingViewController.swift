@@ -129,7 +129,7 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
         //add the graphic at that point
         //keep a reference to that graphic to update the geometry if moved
         self.longPressedGraphic = self.graphicForLocation(mapPoint)
-        self.stopGraphicsOverlay.graphics.add(self.longPressedGraphic)
+        self.stopGraphicsOverlay.graphics.add(self.longPressedGraphic!)
         //clear the route graphic
         self.longPressedRouteGraphic = nil
         //route
@@ -223,7 +223,7 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
             self.totalTime -= Double(truncating: self.longPressedGraphic.attributes["routeTime"] as! NSNumber)
             self.totalDistance -= Double(truncating: self.longPressedGraphic.attributes["routeLength"] as! NSNumber)
             
-            self.routeGraphicsOverlay.graphics.remove(self.longPressedRouteGraphic)
+            self.routeGraphicsOverlay.graphics.remove(self.longPressedRouteGraphic!)
             self.longPressedRouteGraphic = nil
         }
         

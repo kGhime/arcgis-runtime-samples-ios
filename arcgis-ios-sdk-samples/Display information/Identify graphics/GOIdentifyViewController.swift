@@ -60,7 +60,7 @@ class GOIdentifyViewController: UIViewController, AGSGeoViewTouchDelegate {
         //add the polygon graphic
         self.graphicsOverlay.graphics.add(polygonGraphic)
         //add the graphics overlay to the map view
-        self.mapView.graphicsOverlays.add(self.graphicsOverlay)
+        self.mapView.graphicsOverlays.add(self.graphicsOverlay!)
     }
     
     // MARK: - AGSGeoViewTouchDelegate
