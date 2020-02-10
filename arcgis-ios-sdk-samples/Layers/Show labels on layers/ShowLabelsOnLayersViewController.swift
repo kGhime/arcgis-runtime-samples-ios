@@ -66,6 +66,7 @@ class ShowLabelsOnLayersViewController: UIViewController {
         /// The styling for the label.
         let textSymbol = AGSTextSymbol()
         textSymbol.size = 12
+        //textSymbol.size = 40
         textSymbol.haloColor = .white
         textSymbol.haloWidth = 2
         textSymbol.color = color
