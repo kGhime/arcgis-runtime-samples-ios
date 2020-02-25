@@ -31,32 +31,32 @@ import ArcGIS
 
 
 /* Kavish Portal: 5 minute refresh token */
-///// The URL of the portal with which to authenticate.
-//private let portalURL = URL(string: "https://kghime.esri.com/portal")!
-///// The Client ID for an app registered with the server. The provided ID is for
-///// a public app created by the ArcGIS Runtime team.
-//private let portalItemID = "179e26a424ca4729abdb5bd978e37246"
-//
-///// The identifier with which this application was registered with the portal.
-//private let clientID = "mwhsaTc9FyCwGweF"
-///// The URL for redirecting after a successful authorization (this must be
-///// configured in the Info plist).
-//private let redirectURLString = "my-ags-app://auth"
-/* Kavish Portal: 5 minute refresh token */
-
-/* Biraja Portal */
 /// The URL of the portal with which to authenticate.
-private let portalURL = URL(string: "https://bnayak1.esri.com/portal")!
+private let portalURL = URL(string: "https://kghime.esri.com/portal")!
 /// The Client ID for an app registered with the server. The provided ID is for
 /// a public app created by the ArcGIS Runtime team.
-private let portalItemID = "eb63a44eae0d449f96e1334728d53f6f"
+private let portalItemID = "179e26a424ca4729abdb5bd978e37246"
 
 /// The identifier with which this application was registered with the portal.
-private let clientID = "mxqzqKsBmNgFll8o"
+private let clientID = "mwhsaTc9FyCwGweF"
 /// The URL for redirecting after a successful authorization (this must be
 /// configured in the Info plist).
 private let redirectURLString = "my-ags-app://auth"
-/* Biraja Portal */
+/* Kavish Portal: 5 minute refresh token */
+
+///* Biraja Portal */
+///// The URL of the portal with which to authenticate.
+//private let portalURL = URL(string: "https://bnayak1.esri.com/portal")!
+///// The Client ID for an app registered with the server. The provided ID is for
+///// a public app created by the ArcGIS Runtime team.
+//private let portalItemID = "eb63a44eae0d449f96e1334728d53f6f"
+//
+///// The identifier with which this application was registered with the portal.
+//private let clientID = "mxqzqKsBmNgFll8o"
+///// The URL for redirecting after a successful authorization (this must be
+///// configured in the Info plist).
+//private let redirectURLString = "my-ags-app://auth"
+///* Biraja Portal */
 
 /// A view controller that manages the interface of the Authenticate with OAuth
 /// sample.
@@ -95,7 +95,7 @@ class AuthenticateWithOAuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         (navigationItem.rightBarButtonItem as? SourceCodeBarButtonItem)?.filenames = [
             "AuthenticateWithOAuthViewController"
         ]
